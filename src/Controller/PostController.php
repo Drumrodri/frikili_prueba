@@ -47,7 +47,7 @@ class PostController extends AbstractController
                 // instead of its contents
                 $post->setFoto($newFilename);
             }
-            //fin subir archivo
+            //fin subir archivos
             $user = $this->getUser();
             $post->setUser($user);
             $em=$this->getDoctrine()->getManager();
